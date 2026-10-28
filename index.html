@@ -8,15 +8,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>Water Quest</h1>
-    <p class="game-instructions">Collect 20 items to complete the game!</p>
+    <header class="game-header">
+      <img class="brand-logo" src="img/cw_logo_horizontal.png" alt="charity: water">
+      <p class="eyebrow">A quick water mission</p>
+      <h1>Water Quest</h1>
+      <p class="game-instructions">Tap yellow jerry cans, avoid the mud, and collect 20 before time runs out.</p>
+    </header>
     <div class="stats">
-      <p>Cans Collected: <span id="current-cans">0</span></p>
-      <p>Time Left: <span id="timer">30</span>s</p>
+      <p><span class="stat-label">Cans collected</span> <span id="current-cans">0</span></p>
+      <p><span class="stat-label">Time left</span> <span id="timer">30</span><span class="unit">s</span></p>
     </div>
-    <div id="achievements" class="achievement"></div>
-    <div class="game-grid"></div>
-    <button id="start-game">Start Game</button>
+    <div id="achievements" class="achievement" role="status" aria-live="polite"></div>
+    <div class="game-grid" aria-label="Water can game board"></div>
+    <div class="game-actions">
+      <button id="start-game" type="button">Start game</button>
+      <button id="reset-game" class="secondary-button" type="button">Reset</button>
+    </div>
+    <div id="confetti" class="confetti-layer" aria-hidden="true"></div>
   </div>
   <script src="script.js"></script>
 </body>
