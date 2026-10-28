@@ -164,11 +164,11 @@ h1 {
   aspect-ratio: 1;
   height: auto;
   padding: 0;
-  background-image: url('img/water-can.png');
+  background-image: url('img/cw_logo.png');
   background-color: transparent;
-  background-size: contain;
+  background-size: 170% auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   border: 0;
   cursor: pointer;
   min-width: 0;
